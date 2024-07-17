@@ -1,0 +1,50 @@
+{
+    "data": {
+        "result": [
+            {
+                "id": 1,
+                "min-value": 0,
+                "max-value": 18.4,
+                "color": "blue",
+                "text": "Underweight",
+                "description": "Your weight is below normal limits",
+                "category": "You are in the underweight category.",
+                "advice": "The best way to gain weight is to eat foods that are nutrient-rich and calorie-dense.",
+                "solution": "If your BMI is in this category, then you are advised to increase your weight to the normal limit."
+            },
+            {
+                "id": 2,
+                "min-value": 18.5,
+                "max-value": 24.9,
+                "color": "green",
+                "text": "Normal (Ideal)",
+                "description": "Your weight is still within normal limits",
+                "category": "You are in the normal category.",
+                "advice": "Maintain your lifestyle and diet to keep your BMI within the normal category.",
+                "solution": "If your BMI is in this category, it means you have a good lifestyle, good job, keep it up."
+            },
+            {
+                "id": 3,
+                "min-value": 25,
+                "max-value": 29.9,
+                "color": "yellow",
+                "text": "Overweight",
+                "description": "Your weight exceeds the normal limit",
+                "category": "You are in the overweight category.",
+                "advice": "The best way to lose weight is to control the calories in the food you consume and exercise regularly.",
+                "solution": "If your BMI is in this category, then you are advised to reduce your weight to normal limits."
+            },
+            {
+                "id": 4,
+                "min-value": 30,
+                "max-value": 100,
+                "color": "red",
+                "text": "Obesity",
+                "description": "Your weight is way beyond the normal limit",
+                "category": "You are in the obesity category.",
+                "advice": "The best way to lose weight is to control the calories in the food you consume and exercise regularly.",
+                "solution": "If your BMI is in this category, then you are advised to reduce your weight to normal limits."
+            }
+        ]
+    }
+}

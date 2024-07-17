@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+form {
+    background-color: transparent;
+    padding: 12px 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: 1px solid #386641;
+}
+
+input {
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #6a994e;
+    margin-right: 5px;
+    background-color: azure;
+}
+
+select {
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    background-color: #386641;
+    color: #ffffff;
+}
+
+.input-label {
+    font-size: medium;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.input-wrapper {
+    padding: 10px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    padding: 20px 60px;
+}
+
+.column {
+    margin: 12px 20px;
+}
+
+.flex {
+    display: flex;
+    padding: auto;
+    justify-content: center;
+}
+
+.bg-red {
+    background-color: #f8d7da;
+}
+
+.bg-yellow {
+    background-color: #fff3cd;
+}
+
+.bg-green {
+    background-color: #d1e7dd;
+}
+
+.bg-blue {
+    background-color: #cff4fc;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-xl {
+    font-size: 36px;
+}
+
+.text-lg {
+    font-size: 20px;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.button-primary {
+    padding: 8px 10px;
+    margin: 10px 10px 10px 0px;
+    border: 1px solid #6a994e;
+    background-color: #6a994e;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button-outlined {
+    padding: 8px 10px;
+    margin: 10px 10px 10px 0px;
+    border: 1px solid #6a994e;
+    background-color: transparent;
+    color: #6a994e;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button-primary:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button-outlined:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #6a994e;
+}
+
+#result-box {
+    /* background-color: #f2e8cf; */
+    padding: 12px 40px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.is-pregnant-warning {
+    background-color: #F3D9D9;
+    color: #FA3838;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 15px 20px;
+}

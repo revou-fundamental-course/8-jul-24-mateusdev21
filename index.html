@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
     <title>BMI Calculator</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="flex">
+            <div class="w-50">
+                <h1>BMI Calculator</h1>
+                <p class="text-center"> Ideal body weight is everyone's dream. Not only does it have a body shape
+                    that supports your appearance,
+                    ideal body weight also indicates a healthy body condition. How about you? Let's calculate now on the
+                    BMI
+                    Calculator.
+                </p>
+            </div>
+        </div>
+        <div class="flex">
+            <div id="calculator-column" class="w-50 column">
+                <form id="bmi-form">
+                    <div class="input-wrapper">
+                        <div class="mb-10">
+                            <span class="input-label">Gender</span>
+                        </div>
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+
+
+                    <div class="input-wrapper">
+                        <div class="mb-10">
+                            <label for="weight" class="input-label">Weight</label>
+                        </div>
+                        <input type="number" name="weight" id="weight" step="0.001" min="0" required>
+                        <select name="weightUnits" id="weightUnits">
+                            <option value="kg">Kilogram (kg)</option>
+                            <option value="lbs">Pounds (lbs)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div class="mb-10">
+                            <label for="age" class="input-label">Age (years)</label>
+                        </div>
+                        <input type="number" name="age" id="age" min="0" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div class="mb-10">
+                            <label for="height" class="input-label">Height</label>
+                        </div>
+                        <input type="number" name="height" id="height" step="0.01" min="0" required>
+                        <select name="heightUnits" id="heightUnits">
+                            <option value="cm">Centimeters (cm)</option>
+                            <option value="m">Meters (m)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <button type="submit" class="button-primary">Calculate BMI</button>
+                        <button id="reset-btn" class="button-outlined">Reset</button>
+                    </div>
+                </form>
+
+                <h3>Features</h3>
+                <ol>
+                    <li>Calculate Weight</li>
+                    <li>Determine whether body weight is in the ideal or non-ideal category</li>
+                    <li>Prepare a weight loss program</li>
+                </ol>
+                <p>This calculator should only be used by adults, pregnant or breastfeeding women should not rely on
+                    this BMI calculation, and no action should be taken based on the results of this calculation before
+                    first consulting a competent person in this matter such as a doctor.
+                </p>
+                <p>
+                    This calculator will give you an idea of how your weight compares to the general values. Body Mass
+                    Index (BMI) is a numerical value derived from an individual's weight and height (BMI = weight
+                    (kg) / height² (m²)).
+                </p>
+
+                <h3>BMI Chart For Adults</h3>
+                <p>This is a graph of BMI categories based on the World Health Organization data. The dashed lines
+                    represent subdivisions within a major categorization.
+                </p>
+                <img src="images/bmi-chart.gif" alt="BMI Chart">
+            </div>
+            <div id="result-column" class="w-50 column hidden">
+                <h2>Result</h2>
+                <div id="result-box"></div>
+                <div id="result-detail"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
 </body>
+
 </html>
